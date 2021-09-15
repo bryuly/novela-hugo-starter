@@ -1,11 +1,11 @@
 ---
-title: Why Narative loves Gatsby and Next.js
-date: 2017-04-31
+title: test post 2
+date: 2021-09-14T06:00:00+00:00
 hero: "/images/hero-4.jpg"
 excerpt: test 2 still
 timeToRead: 8
 authors:
-- Dennis Brotzky
+- Brad Yuly
 
 ---
 To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide. We call this team Narative.
