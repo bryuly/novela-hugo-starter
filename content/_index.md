@@ -1,7 +1,8 @@
 ---
 hero:
-  heading: Novela, the simplest way to start publishing with Hugo and Forestry.
-  maxWidthPX: 652
+  heading: Dollars-n-Sense, learn how to improve your money skills and money knowledge.
+  maxWidthPX: "652"
 seo:
-  image: /images/hero-2.jpg
+  image: "/images/hero-2.jpg"
+
 ---
