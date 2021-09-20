@@ -1,5 +1,5 @@
 ---
-title: What is retirement?
+title: What is Retirement?
 date: 2021-09-20T15:00:00+00:00
 hero: "/images/hero-6.jpg"
 excerpt: Define retirement so that steps can be established to get to retirement.
