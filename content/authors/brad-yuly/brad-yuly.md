@@ -5,7 +5,7 @@ avatar: ''
 social:
 - title: facebook
   url: newurl.com
-featured: false
+featured: true
 draft: true
 
 ---
