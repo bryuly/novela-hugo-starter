@@ -6,6 +6,5 @@ social:
 - title: facebook
   url: newurl.com
 featured: true
-draft: true
 
 ---
