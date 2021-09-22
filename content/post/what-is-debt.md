@@ -6,12 +6,21 @@ excerpt: Define retirement so that steps can be established to get to retirement
 timeToRead: 3
 authors:
 - Brad Yuly
-draft: true
 
 ---
-# This is a primary heading
+# What is debt?
 
-Do they have the resources necessary to execute on their ideas? Or are they constantly under pressure to pluck only the lowest-hanging fruit through bare minimum means, while putting their greatest ambitions on the back-burner?
+Let us first establish that we are talking about finances here on this website. While debt can apply to something other than money that is not what we are talking about.
+
+The Merriam-Webster definition for debt is as follows:
+
+> _A state of being under obligation to pay or repay someone or something in return for something received **:** a state of owing_
+
+That means that if you borrow a dollar from a friend because it is in your car you are debt to them until you get to the car and pay them back. There are many kinds of debt that exist. The example above is probably the first form of debt we ever encounter, below is a list of the most commonly referenced or discussed types of debt:
+
+* Mortgage
+* Car Loan
+* Credit Card
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
@@ -74,9 +83,5 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
 * Unordered list can use asterisks
-
-
 * Or minuses
-
-
 * Or pluses
