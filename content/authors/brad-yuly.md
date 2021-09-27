@@ -1,8 +1,8 @@
 ---
 title: Brad Yuly
-bio: about me....
+bio: I am a person who loves to do many things...this is just one of them.
 avatar: ''
 social: []
-featured: true
+featured: false
 
 ---
