@@ -1,11 +1,12 @@
 ---
 title: What is Budgeting?
-date: 2021-09-20T14:00:00+00:00
+date: 2021-09-20T14:00:00.000+00:00
 hero: "/images/hero-6.jpg"
 excerpt: Learn what budgeting is so that we can dive into how to budget.
 timeToRead: 3
 authors:
 - Brad Yuly
+- Spending
 
 ---
 # This is a primary heading
