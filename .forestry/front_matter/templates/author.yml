@@ -9,7 +9,7 @@ fields:
   label: Name
 - name: bio
   type: textarea
-  default:
+  default: ''
   config:
     required: false
     wysiwyg: false
