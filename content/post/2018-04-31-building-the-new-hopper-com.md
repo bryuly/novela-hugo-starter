@@ -1,130 +1,44 @@
 ---
 title: When should I invest?
-date: 2018-04-31
-hero: "/images/hero-2.jpg"
-excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel
-  apps in the U.S, along with Uber, Lyft.
+date: 2021-10-26T06:00:00+00:00
+hero: "/images/favicon.svg"
+excerpt: Is there a time that is best to invest?
 timeToRead: 4
 authors:
 - Brad Yuly
 
 ---
-Hello, world! This is a demo post for `hugo-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
 
-At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
-At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+## When should I invest?
 
-```js
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import styled from "@emotion/styled";
+Let me start with a statement, one should only engage in something they understand.
 
-import * as SocialIcons from "../../icons/social";
-import mediaqueries from "@styles/media";
-
-const icons = {
-  dribbble: SocialIcons.DribbbleIcon,
-  linkedin: SocialIcons.LinkedinIcon,
-  twitter: SocialIcons.TwitterIcon,
-  facebook: SocialIcons.FacebookIcon,
-  instagram: SocialIcons.InstagramIcon,
-  github: SocialIcons.GithubIcon,
-};
-
-const socialQuery = graphql`
-  {
-    allSite {
-      edges {
-        node {
-          siteMetadata {
-            social {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`;
-
-function SocialLinks({ fill = "#73737D" }: { fill: string }) {
-  const result = useStaticQuery(socialQuery);
-  const socialOptions = result.allSite.edges[0].node.siteMetadata.social;
-
-  return (
-    <>
-      {socialOptions.map(option => {
-        const Icon = icons[option.name];
-
-        return (
-          <SocialIconContainer
-            key={option.name}
-            target="_blank"
-            rel="noopener"
-            data-a11y="false"
-            aria-label={`Link to ${option.name}`}
-            href={option.url}
-          >
-            <Icon fill={fill} />
-          </SocialIconContainer>
-        );
-      })}
-    </>
-  );
-}
-```
-
-This is another paragraph after the code block.
-
-## This is a secondary heading
-
-```jsx
-import React from "react";
-import { ThemeProvider } from "theme-ui";
-import theme from "./theme";
-
-export default props => (
-  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-);
-```
-
-At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
-
-In this article I’ll explain how Gatsby’s lifecycle works and what the Gatsby specific files are for.
-
-One of the challenges I had when learning Gatsby was trying to understand the Gatsby lifecycle. React introduced me to the concept of a Component Lifecycle, but when I started learning Gatsby I felt at a loss again. I remember looking through example repositories and seeing Gatsby specific files in every project and thinking to myself, “What are these files for? Why are gatsby-node.js, gatsby-browser.js, and gatsby-ssr.js generated in the default starter kit? Can I really delete these files?”
-
-In this article I’ll explain the how Gatsby’s lifecycle works and what the Gatsby specific files are for.
-
-## How does Gatsby work?
-
-To understand what these files are for, we must first understand how Gatsby works. Gatsby is a static site generator that pulls data from sources you provide and generates a website/app for you.
-
-Gatsby requires Node to be installed to run the Bootstrap and Build sequences. Under the hood, Gatsby uses Webpack to build and start a development server amongst other things.
+What do I mean by this? Simple, you probably don't go sky diving without first having an idea of what sky diving is, what its risks are, and how you mitigate those risks. After you have all the applicable information you can then make a judgement on if it is something you want to do or not do.
 
 ### Step 1
 
-During the Bootstrap sequence, which occurs every time you run \$ gatsby develop, there are about 20 events that fire ranging from validating your gatsby-config.js to building the data schemas and pages for your site. For example, the Bootstrap sequence is where Gatsby will create pages. If you want an in depth look of all 20 Bootstrap steps Swyx shared a fantastic Gist that goes into more detail.
+Learn what investing is, see my previous post **What is Investing?**
 
 ### Step 2
 
-The Build sequence is very similar to the Bootstrap sequence, except it’s run with production optimizations and will output static files ready for deployment. Think of it as building your React application in production mode vs development.
+Learn what you are investing in, what the risks are and how you can mitigate those risks.
 
 ### Step 3
 
-And finally, once the generated files are deployed, Gatsby lives in the browser. Gatsby cleverly generates a static website that turns into a web app after initial load, which extends the lifecycle to the browser.
+And finally, you get to this step. When should I invest? Investing as we are referring to in this article is long term investing (not day trading or even weekly). Long term investing is the easiest way to build wealth with a low amount of risk. 
+
+...once the generated files are deployed, Gatsby lives in the browser. Gatsby cleverly generates a static website that turns into a web app after initial load, which extends the lifecycle to the browser.
 
 What’s important to remember is that Gatsby’s lifecycle can be aggregated into 3 main sequences:
 
-- Bootstrap
-- Build
-- Browser
-- These three sequences makeup the Gatsby lifecycle.
+* Bootstrap
+* Build
+* Browser
+* These three sequences makeup the Gatsby lifecycle.
 
 Parts of the lifecycle are visible when running $ gatsby develop
 A peak into the Gatsby lifecycle when running $ gatsby develop
-A peak into the Gatsby lifecycle when running \$ gatsby develop
+A peak into the Gatsby lifecycle when running $ gatsby develop
 If you’re familiar with React and the component lifecycle, Gatsby’s lifecycle is almost the same concept. Just like React’s lifecycle, Gatsby exposes hooks for developers to build on top of. Those lifecycle hooks are accessed through Gatsby specific files such as gatsby-node.js, gatsby-browser.js and gatsby-ssr.js.
 
 What are the Gatsby specific files for?
@@ -138,17 +52,17 @@ Gatsby runs a Node process when you develop or build your website and uses Webpa
 
 Everything that occurs during the Bootstrap and Build sequences occurs in gatsby-node.js. This means it’s the perfect place to create pages dynamically based off data from a source plugin or modify Gatsby’s Webpack or Babel configs.
 
-For example, if you want to move some files manually, such as a Netlify \_redirects file, a good place to do it is in your gatsby-node.js file at the onPostBuild lifecycle hook.
+For example, if you want to move some files manually, such as a Netlify _redirects file, a good place to do it is in your gatsby-node.js file at the onPostBuild lifecycle hook.
 
 From experience, most of my time has revolved around handling data and building pages in gatsby-node.js. This file quickly becomes the piping of your entire website.
 
 ## Examples of gatsby-node.js hooks:
 
-- createPages
-- onCreateBabelConfig
-- onCreateWebpackConfig
-- onPostBuild
-- gatsby-ssr.js
+* createPages
+* onCreateBabelConfig
+* onCreateWebpackConfig
+* onPostBuild
+* gatsby-ssr.js
 
 When you think Server Side Rendering you think of a server that takes in requests and dynamically builds pages and sends it to the client. Gatsby doesn’t do that, but it does server side render — it generates all the pages during build time.
 
@@ -156,10 +70,10 @@ Naturally, gatsby-ssr.js allows developers to hook into that lifecycle. In my ex
 
 ## Examples of gatsby-ssr.js hooks:
 
-- onPreRenderHTML
-- onRenderBody
-- replaceRenderer
-- gatsby-browser.js
+* onPreRenderHTML
+* onRenderBody
+* replaceRenderer
+* gatsby-browser.js
 
 Gatsby is a static site that loads a dynamic application after initial load, which means you get the benefits of a static site in a web application. gatsby-browser.js provides convenient hooks to deal with app loading, route updates, service worker updates, scroll positioning, and more.
 
@@ -167,11 +81,11 @@ Everything that occurs after your static site has loaded can be hooked in gatsby
 
 ## Examples of gatsby-browser.js hooks:
 
-- onClientEntry
-- onRouteUpdate
-- onServiceWorkerInstalled
-- registerServiceWorker
-- shouldUpdateScroll
+* onClientEntry
+* onRouteUpdate
+* onServiceWorkerInstalled
+* registerServiceWorker
+* shouldUpdateScroll
 
 ## Conclusion
 
